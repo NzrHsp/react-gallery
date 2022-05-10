@@ -14,6 +14,7 @@ class SearchBar extends React.Component {
         <form
           onSubmit={this.onInputSubmit.bind(this)}
           className="ui icon input container"
+          style={{ width: "100%" }}
         >
           <input
             className="prompt"
