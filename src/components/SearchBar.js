@@ -13,12 +13,13 @@ class SearchBar extends React.Component {
       <div className="ui left aligned category search">
         <form
           onSubmit={this.onInputSubmit.bind(this)}
-          className="ui icon input container"
+          className="ui icon input"
+          style={{ width: "100%" }}
         >
           <input
             className="prompt"
             type="text"
-            placeholder="Search"
+            placeholder="Search image..."
             value={this.state.term}
             onChange={(e) => this.setState({ term: e.target.value })}
           />
